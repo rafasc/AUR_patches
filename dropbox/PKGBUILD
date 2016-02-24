@@ -1,6 +1,7 @@
 # Maintainer: Massimiliano Torromeo <massimiliano.torromeo@gmail.com>
 # Contributor: Tom < tomgparchaur at gmail dot com >
 # Contributor: David Manouchehri <d@32t.ca>
+# Contributor: João Pinto <joao.pinto@gmail.com>
 
 pkgname=dropbox
 pkgver=3.14.7
@@ -18,8 +19,8 @@ conflicts=("dropbox-experimental")
 options=('!strip' '!upx')
 
 source=("dropbox.png" "dropbox.desktop" "terms.txt" "dropbox.service" "dropbox@.service")
-source_i686=("https://d1ilhw0800yew8.cloudfront.net/client/${pkgname}-lnx.x86-${pkgver}.tar.gz")
-source_x86_64=("https://d1ilhw0800yew8.cloudfront.net/client/${pkgname}-lnx.x86_64-${pkgver}.tar.gz")
+source_i686=("https://www.dropbox.com/download?plat=lnx.x86")
+source_x86_64=("https://www.dropbox.com/download?plat=lnx.x86_64")
 
 sha256sums=('e7d245f5d1a3d5322614b61400ae2913a8caef44bc86717ff7d8197a15dd7f01'
             '541f2fd2de0d601a08cde7853e404062f542af21e6e7106825b5e68177168e0f'
