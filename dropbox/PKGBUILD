@@ -5,7 +5,7 @@
 
 pkgname=dropbox
 pkgver=3.14.7
-pkgrel=1
+pkgrel=2
 pkgdesc="A free service that lets you bring your photos, docs, and videos anywhere and share them easily."
 arch=("i686" "x86_64")
 url="http://www.dropbox.com"
@@ -19,8 +19,9 @@ conflicts=("dropbox-experimental")
 options=('!strip' '!upx')
 
 source=("dropbox.png" "dropbox.desktop" "terms.txt" "dropbox.service" "dropbox@.service")
-source_i686=("https://www.dropbox.com/download?plat=lnx.x86")
-source_x86_64=("https://www.dropbox.com/download?plat=lnx.x86_64")
+
+source_i686=("https://dl-web.dropbox.com/u/17/${pkgname}-lnx.x86-${pkgver}.tar.gz")
+source_x86_64=("https://dl-web.dropbox.com/u/17/${pkgname}-lnx.x86_64-${pkgver}.tar.gz")
 
 sha256sums=('e7d245f5d1a3d5322614b61400ae2913a8caef44bc86717ff7d8197a15dd7f01'
             '541f2fd2de0d601a08cde7853e404062f542af21e6e7106825b5e68177168e0f'
